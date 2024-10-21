@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.8/p5.min.js"></script>
+    <link rel="stylesheet" href="M_portfolio.css">
+    <script>
+        
+        var x, y, r;
+        function setup() {
+          createCanvas(windowWidth, 240);
+          //img = loadImage('./women.jpg')
+          noStroke();
+          background('skyblue');
+        }
+        
+        function draw() {
+          x = random(width);
+          y = random(height);
+          if (random() > 0.9) {
+            r = random(10, 20);
+          } else {
+            r = random (5, 10);
+          }
+          fill(255, 255, 255, random(30, 250));
+          ellipse(x, y, r, r);
+        }
+    </script>
+    <title>Morinaga's Portfolio</title>
+<!-- <style>
+    canvas {
+        position: fixed;
+    }
+</style> -->
+    
+
+</head>
+
+<body>
+    <div class="header_color">
+        <h1><span class="iro">M</span>'s Portfolio</h1>
+        <ul class="ula">
+
+            <li class="sam"><a href="#jiko" class="subtitle">自己紹介</a></li>
+            <li class="self"><a href="#jissou" class="samlink">サンプル</a></li>
+
+        </ul>
+    </div>
+    <div class="whale_container">
+    </div>
+    <div class="whale_container2">
+    </div>
+    <main>
+        <div class="all_container">
+
+
+
+            <h2 class="subtitle1" id="jiko">自己紹介<br>
+                <span class="subtitle2">Self Introduction</span>
+            </h2>
+            <p class="text">私の名前は<span
+                    class="taro">守永葵</span>です。埼玉県在住です。このページはHTML,CSSを学習したためポートフォリオとして制作いたしました。お問い合わせフォームの機能は未実装となっています。
+                    <br>どうぞよろしくお願いいたします。
+            </p>
+
+            <div class="tree_container">
+                <img src="./cat.jpg" alt="木の写真" class="tree">
+            </div>
+            <div class="box3">
+                <div class="box1">
+                    <div class="box1_1">
+                        <h3 class="favorites">スキル<br>
+                            <span class="border">Skill</span>
+                        </h3>
+                        <ul class="aida">
+                            <li class="yellow">HTML</li>
+                            <li class="yellow">CSS</li>
+                            <li class="yellow">JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box1">
+                    <div class="box2_2">
+                        <h3 class="favorites">Webサイト<br>
+                            <span class="border">Web Sites</span>
+                        </h3>
+                        <ul class="aida">
+                            <li class="pink"><a class="pink" href="https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC" target="_blank">日本</a>
+                            </li>
+                            <li class="pink"><a class="pink" href="https://www.google.com/" target="_blank">Google</a>
+                            </li>
+                            <li class="pink"><a class="pink" href="https://www.yahoo.co.jp/" target="_blank">Yahoo!
+                                    Japan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="subtitle1" id="jissou">サンプル<br>
+                <span class="subtitle2">Sample</span>
+            </h2>
+
+            <div class="gazou">
+                <h3 class="underbar">画像ギャラリー</h3>
+                <div class="gallery_container">
+
+                    <div class="moon">
+                        <img src="./flower1.jpg" class="gallery" alt="宇宙">
+                        <h4 class="pic_title">笑顔を届ける</h4>
+                        <p class="pic_contents">一輪の花は小さくても、存在感は大きく、心に温かさや喜びをもたらします。花が持つ癒しの力は、日々の暮らしにさりげない幸せを運んでくれるのです。<br>--by chat GPT</p>
+                    </div>
+
+                    <div class="stone">
+                        <img src="./flower2.jpg" class="gallery" alt="朝日と石">
+                        <h4 class="pic_title">鮮やかに彩る</h4>
+                        <p class="pic_contents">花は目立たず静かに咲きながらも、その鮮やかな色彩や形は見る人の心を引きつけます。その静かさと鮮やかさの対比が、花の魅力を一層際立たせています。<br>--by chat GPT</p>
+                    </div>
+
+                    <div class="mirror">
+                        <img src="./flower3.jpg" class="gallery" alt="湖">
+                        <h4 class="pic_title">優しさを運ぶ</h4>
+                        <p class="pic_contents">自然の中で咲く花々は、純粋で美しい姿で、優しさや癒しを与えます。忙しい日々の中でも、花を眺めることで心が落ち着き、平穏を感じることができます。<br>--by chat GPT</p>
+                    </div>
+
+                    <div class="ballon">
+                        <img src="./flower4.jpg" class="gallery" alt="風船">
+                        <h4 class="pic_title">大きな喜び</h4>
+                        <p class="pic_contents">花が咲く瞬間は、自然の中の小さな奇跡です。その生命力と美しさは、人々に大きな喜びをもたらし、見るたびに新たな感動を呼び起こします。<br>--by chat GPT</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quest_container">
+                <h3 class="underbar">お問い合わせフォーム</h3>
+
+
+                <div class="form_container">
+                    <dl>
+                        <dt class="dt_class"><span class="form_contents">お名前</span></dt>
+
+                        <dd><input type="text" class="text_a"></dd>
+
+
+
+
+
+                        <dt class="dt_class"><span class="form_contents">メールアドレス</span></dt>
+                        <dd><input type="email" class="text_a"></dd>
+
+
+
+                        <dt class="dt_class"><span class="form_contents">年齢</span></dt>
+                        <dd><input type="number" class="text_a"></dd>
+
+
+
+                        <dt class="dt_class"><span class="form_contents">お問合わせ内容</span></dt>
+                        <dd><input type="text" class="text_a"></dd>
+                    </dl>
+                </div>
+
+
+
+            </div>
+
+
+
+            <!-- <button type="submit" class="button">送信</button> -->
+            <!-- <h3 class="underbar">JavaScript課題</h3> -->
+            <!-- <button type="submit" id="button" class="button">実行！</button> -->
+        </div>
+
+    </main>
+    <p class="copyright">Copyright © Aoi Morinaga</p>
+    <div class="footer_color"></div>
+
+
+
+</body>
+
+</html>
